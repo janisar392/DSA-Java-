@@ -12,7 +12,7 @@ public class FindMinInRotateArray {
         while (start<=end){
             int mid = start +(end-start)/2;
 
-            if(arr[mid]<= arr[n-1]){
+            if(arr[mid]<= arr[end]){
                 ans= mid;
                 end = mid-1;
             }
