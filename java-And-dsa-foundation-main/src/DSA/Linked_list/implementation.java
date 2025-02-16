@@ -38,12 +38,15 @@ public class implementation {
         void insertAt(int idx , int val){
             Node t= new Node(val);
             Node temp = head ;
+
             if (idx==size()){
                 insertAtEnd(val);
                 return;
+
             } else if (idx==0) {
                 insertAtHead(val);
                 return;
+
             } else if (idx<0|| idx>size()) {
                 System.out.println("invalid index !");
                 return;
