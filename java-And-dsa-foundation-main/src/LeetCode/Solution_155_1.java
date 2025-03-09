@@ -30,7 +30,7 @@ public class Solution_155_1 {
 
         else if(st.peek()>= min) st.pop();
         else if(st.peek() <= min){
-            long old = 2*min -st.peek();
+            long old = 2*min -(st.peek());
             min = old;
             st.pop();
         }
