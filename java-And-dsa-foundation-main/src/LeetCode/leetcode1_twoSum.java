@@ -17,7 +17,7 @@ public class leetcode1_twoSum {
     public static void main(String[] args) {
 
         int[] num = {3,2,1,5,3};
-        twoSum(num,6);
+        System.out.println(twoSum(num,6));
 
     }
 }
