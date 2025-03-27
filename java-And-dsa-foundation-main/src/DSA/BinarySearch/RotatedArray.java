@@ -21,7 +21,7 @@ public class RotatedArray {
                     end= mid-1;
                 }
             }
-            else {
+            else { //arr[mid] > arr[end]
                 if(target>=arr[start]&&target<arr[mid]){
                     end = mid-1;
                 }
