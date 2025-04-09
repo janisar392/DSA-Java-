@@ -25,7 +25,7 @@ public class LinkedListImpl {
     }
 
     public int pop(){
-        if(front ==null{
+        if(front ==null){
             return -1;
         }
 
