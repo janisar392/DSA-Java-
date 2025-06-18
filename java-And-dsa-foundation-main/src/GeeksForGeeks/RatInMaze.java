@@ -1,4 +1,4 @@
-package GreaksForGreaks;
+package GeeksForGeeks;
 import java.util.*;
 
 public class RatInMaze {

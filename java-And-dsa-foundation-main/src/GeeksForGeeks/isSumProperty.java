@@ -1,4 +1,4 @@
-package GreaksForGreaks;
+package GeeksForGeeks;
 
 public class isSumProperty {
     public static class Node{
