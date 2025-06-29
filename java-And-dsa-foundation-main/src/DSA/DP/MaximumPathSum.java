@@ -1,4 +1,4 @@
-package DSA.BST;
+package DSA.DP;
 
 public class MaximumPathSum {
 
