@@ -23,8 +23,8 @@ public class SplitLargestMinSum {
 
         int maxVal = Integer.MIN_VALUE;
         int sum = 0;
-
         for(int num:nums){
+
             maxVal=Math.max(maxVal,num);
             sum += num;
         }
