@@ -8,7 +8,6 @@ public class numProvinces {
         for(int i= 0 ; i< V ; i++){
             adjList.add(new ArrayList<Integer>());
         }
-
         for(int i =0 ; i< V ; i++){                  // adj matrix to list
             for(int j =0 ; j< V ; j++){
                 if(adj.get(i).get(j) == 1 && i != j){
