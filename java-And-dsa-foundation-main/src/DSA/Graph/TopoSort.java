@@ -9,7 +9,7 @@ public class TopoSort {
         ArrayList<ArrayList<Integer>> adj = new ArrayList<>();
         for(int i =0 ; i< V ;i++) adj.add(new ArrayList<>());
         for(int[] edge : edges){
-            int u = edge[0] , int v = edge[1];
+            int u = edge[0] , v = edge[1];
             adj.get(u).add(v);
         }
         boolean[] visited = new boolean[V];

@@ -2,9 +2,9 @@ package DSA.HashSet;
 
 import java.util.HashSet;
 
-// every element is in with pair , if element outside bag then remove the number from table
-// otherwise put it on the table
-// find the maximum element on table
+// every element is in with pair , if element outside bag then remove the number from Basic.table
+// otherwise put it on the Basic.table
+// find the maximum element on Basic.table
 
 public class MaxNoOnTable {
     public static int maximumNoOnTable(int[] bag){
