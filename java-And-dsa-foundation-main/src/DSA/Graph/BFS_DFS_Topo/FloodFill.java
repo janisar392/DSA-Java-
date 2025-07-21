@@ -1,4 +1,4 @@
-package DSA.Graph;
+package DSA.Graph.BFS_DFS_Topo;
 
 public class FloodFill {
     public int[][] floodFill(int[][] image, int sr, int sc, int newColor) {

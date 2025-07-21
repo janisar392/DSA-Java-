@@ -1,8 +1,8 @@
-package DSA.Graph;
-import java.util.*;
+package DSA.Graph.BFS_DFS_Topo;
+import  java.util.*;
 
-public class course2 {
-    public int[] findOrder(int NC, int[][] prerequisites) {
+public class course1{
+    public boolean canFinish(int NC, int[][] prerequisites) {
         ArrayList<ArrayList<Integer>> adj = new ArrayList<>();
         for(int i =0 ; i< NC ; i++){
             adj.add(new ArrayList<>());
@@ -24,11 +24,10 @@ public class course2 {
                 q.add(i);
             }
         }
-        int[] topo = new int[NC];
-        int i =0;
+        List<Integer> topo = new ArrayList<>();
         while(!q.isEmpty()){
             int node = q.poll();
-            topo[i++]= node;
+            topo.add(node);
 
             for(int it : adj.get(node)){
                 inDegree[it]--;
@@ -37,7 +36,7 @@ public class course2 {
                 }
             }
         }
-        if(i == NC) return topo;
-        return new int[]{};
+        return  NC == topo.size();
     }
 }
+

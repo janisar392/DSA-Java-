@@ -1,4 +1,4 @@
-package DSA.Graph;
+package DSA.Graph.BFS_DFS_Topo;
 
 public class CountIslands {
     public int countIslands(char[][] grid) {
