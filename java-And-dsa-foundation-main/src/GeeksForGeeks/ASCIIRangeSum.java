@@ -2,7 +2,7 @@ package GeeksForGeeks;
 import java.util.*;
 public class ASCIIRangeSum {
 
-    public ArrayList<Integer> asciirange(String s){
+    public ArrayList<Integer> asciiRange(String s){
 
         HashMap<Character,Integer> first = new HashMap<>();
         HashMap<Character, Integer> last = new HashMap<>();
