@@ -6,14 +6,12 @@ public class DistributeChocolate {
 
         int noOfStudents = 1;
         int chocolate =0;
-
         for(int i = 0; i<a.length;i++){
             if(a[i]>mxChocAllowed)
                 return false;
 
-            if(chocolate + a[i] <= mxChocAllowed){
+            if(chocolate + a[i] <= mxChocAllowed)
                 chocolate += a[i];
-            }
             else {
                 noOfStudents++;
                 chocolate = a[i];
@@ -30,16 +28,13 @@ public class DistributeChocolate {
         int ans =0 , start =1, end=(int)1e9;
 
         while(start <= end){
-
             int mid = start + (end-start)/2;
-
             if(isDivisionPossible(a,m,mid)){
                 ans = mid;
                 end =mid-1;        // giving minimum chocolate
             }
-            else{
+            else
                 start = mid+1;
-            }
         }
         return ans;
     }
