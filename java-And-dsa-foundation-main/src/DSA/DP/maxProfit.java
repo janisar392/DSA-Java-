@@ -45,6 +45,7 @@ public class maxProfit {
                 high = mid - 1;
             }
         }
+        //
         return result;
     }
 }

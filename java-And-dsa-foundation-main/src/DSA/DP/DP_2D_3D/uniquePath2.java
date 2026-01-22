@@ -1,9 +1,26 @@
 package DSA.DP.DP_2D_3D;
 
+import java.util.Scanner;
+
 public class uniquePath2 {
 
+    public static void main(String[] arg){
+        Scanner sc = new Scanner(System.in);
+        int N = sc.nextInt();
+        int M = sc.nextInt();
+
+        int[][] grid = new int[N][M];
+        for(int i =0 ; i< N ; i++){
+            for(int j=0 ; j<M ; j++){
+                grid[i][j] = sc.nextInt();
+            }
+        }
+        int ans = totalWays(N, M , grid);
+        System.out.println(ans);
+    }
+
     private static int MOD = 10000_00007;
-    public int totalWays(int N, int M, int grid[][]) {
+    public static int totalWays(int N, int M, int grid[][]) {
         // Code here
         int[][] dp = new int[N][M];
 
